@@ -1,38 +1,50 @@
-import { useEffect } from "react";
+import React from "react";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import axios from "axios";
-
-const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
-const API = `${BACKEND_URL}/api`;
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import Companies from "./components/Companies";
+import Features from "./components/Features";
+import Testimonials from "./components/Testimonials";
+import Pricing from "./components/Pricing";
+import FAQ from "./components/FAQ";
+import Footer from "./components/Footer";
+import Chatbot from "./components/Chatbot";
+import { mockData } from "./mockData";
 
 const Home = () => {
-  const helloWorldApi = async () => {
-    try {
-      const response = await axios.get(`${API}/`);
-      console.log(response.data.message);
-    } catch (e) {
-      console.error(e, `errored out requesting / api`);
-    }
-  };
-
-  useEffect(() => {
-    helloWorldApi();
-  }, []);
-
   return (
-    <div>
-      <header className="App-header">
-        <a
-          className="App-link"
-          href="https://emergent.sh"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src="https://avatars.githubusercontent.com/in/1201222?s=120&u=2686cf91179bbafbc7a71bfbc43004cf9ae1acea&v=4" />
-        </a>
-        <p className="mt-5">Building something incredible ~!</p>
-      </header>
+    <div className="min-h-screen bg-bg-page">
+      <Header />
+      
+      <main>
+        <section id="home">
+          <Hero data={mockData.hero} />
+        </section>
+        
+        <section id="companies">
+          <Companies companies={mockData.companies} />
+        </section>
+        
+        <section id="features">
+          <Features features={mockData.features} />
+        </section>
+        
+        <section id="testimonials">
+          <Testimonials testimonials={mockData.testimonials} />
+        </section>
+        
+        <section id="pricing">
+          <Pricing pricing={mockData.pricing} />
+        </section>
+        
+        <section id="faq">
+          <FAQ faqs={mockData.faqs} />
+        </section>
+      </main>
+      
+      <Footer />
+      <Chatbot responses={mockData.chatbotResponses} />
     </div>
   );
 };
