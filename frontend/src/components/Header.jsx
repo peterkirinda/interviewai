@@ -28,7 +28,7 @@ const Header = () => {
         {/* Logo */}
         <div className="flex items-center">
           <div className="font-mono font-bold text-lg text-text-primary">
-            InterviewAI
+            HackerBucket
           </div>
         </div>
 
