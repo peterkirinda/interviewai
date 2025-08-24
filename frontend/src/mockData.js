@@ -196,12 +196,12 @@ export const mockData = {
   ],
 
   chatbotResponses: {
-    greeting: "Hi! I'm here to help you with any questions about our AI Mock Interview platform. How can I assist you today?",
+    greeting: "Hi! I'm here to help you with any questions about HackerBucket's AI Mock Interview platform. How can I assist you today?",
     pricing: "We have three plans: Basic (₹999/month), Pro (₹1,999/month), and Premium (₹3,999/month). The Pro plan is most popular and includes unlimited AI interviews and 1 expert session per month.",
     companies: "We support interview simulations for TCS, Accenture, Wipro, Infosys, and 50+ other top companies. Each simulation follows the exact hiring process of that company.",
     features: "Our platform offers AI-powered interviews, real-time feedback, company-specific simulations, 1:1 expert sessions, and detailed performance analytics.",
-    support: "You can reach our support team at support@aimockinterview.com or use the live chat feature. Pro and Premium users get priority support.",
+    support: "You can reach our support team at support@hackerbucket.com or use the live chat feature. Pro and Premium users get priority support.",
     trial: "We offer a 7-day money-back guarantee on all plans. You can also try our basic features with a free demo interview.",
-    default: "I'm not sure about that specific question. Please contact our support team at support@aimockinterview.com or call +91-9876543210 for detailed assistance."
+    default: "I'm not sure about that specific question. Please contact our support team at support@hackerbucket.com or call +91-9876543210 for detailed assistance."
   }
 };
