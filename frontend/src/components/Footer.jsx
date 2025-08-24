@@ -27,7 +27,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-6 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-2">
-            <div className="font-mono font-bold text-xl mb-4">InterviewAI</div>
+            <div className="font-mono font-bold text-xl mb-4">HackerBucket</div>
             <p className="body-small text-gray-300 mb-6 max-w-sm">
               Empowering careers with AI-powered interview preparation. Land your dream job at top MNCs in India.
             </p>
@@ -35,7 +35,7 @@ const Footer = () => {
             <div className="space-y-3 text-sm">
               <div className="flex items-center gap-3">
                 <Mail className="w-4 h-4" />
-                <span>support@interviewai.com</span>
+                <span>support@hackerbucket.com</span>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="w-4 h-4" />
