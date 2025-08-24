@@ -71,7 +71,7 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="mt-12 pt-8 border-t border-gray-700 flex flex-col md:flex-row items-center justify-between">
           <div className="body-small text-gray-300 mb-4 md:mb-0">
-            © 2025 InterviewAI. All rights reserved.
+            © 2025 HackerBucket. All rights reserved.
           </div>
           
           <div className="flex items-center gap-4">
